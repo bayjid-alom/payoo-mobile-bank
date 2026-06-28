@@ -1,3 +1,8 @@
+## Process 
+- number input -> maxlength="11"
+- password input -> maxlength="4" 
+
+
 # 📝 Notes
 
 ### DaisyUI + tailwindCSS connect
