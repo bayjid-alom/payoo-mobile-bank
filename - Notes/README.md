@@ -1,5 +1,6 @@
 > # **Thinking Process** ```Functionality```
 
+## ✔️ Login Page
 - number input -> maxlength="11"
 - password input -> maxlength="4" 
 
@@ -19,6 +20,7 @@
 
 ### To set Default number 
 - নাম্বার ইনপুটে(Attribute) value="01648771835"
+- [Password : Same process]
 
 ## replace() VS assing()
 - window.location.assign("/home.html")
@@ -32,6 +34,35 @@
 - নতুন page-এ যায়।
 - History থেকে আগের page মুছে যায়।
 - ❌ Back করলে আগের page-এ ফেরা যায় না।
+
+## ✔️ Home Page 
+
+- Find similar form like login form 
+
+> ### **Cashout: Functionality idea**
+
+```
+01. get the agent number and validate
+02. get the amount, validate, convert to number
+03. get current balance, validate, convert to number
+04. Calculate new balance
+05. get the pin an verify
+05-01. true::: show and alert  > set balance
+05-01. false::: show an error alert > return
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
