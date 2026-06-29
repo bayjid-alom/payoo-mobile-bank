@@ -1,9 +1,13 @@
-<img src="./assets/Logo-full.png" width="200"  style="background:white;padding:10px;"/>
+> # **```PAYOO``` - Smart MFS Interface 🔥**
 
-# PAYOO - Smart MFS Interface 
+
+> ## **🚀 Live Demo :**
+
+[[ Visit: **PAYOO** - MFS ]](https://bayjid-alom.github.io/payoo-mobile-bank/)
+
 
 ## Overview
-PAYOO is a smart Mobile Financial Services (MFS) interface that provides a seamless digital banking experience. Built with HTML, CSS, DaisyUI, and Vanilla JavaScript, it offers a user-friendly platform for managing money transfers and financial transactions. The application supports key banking operations including adding money, cashouts, bonus rewards, and comprehensive transaction history tracking.
+```PAYOO``` is a smart Mobile Financial Services (MFS) interface that provides a seamless digital banking experience. Built with HTML, CSS, DaisyUI, and Vanilla JavaScript, it offers a user-friendly platform for managing money transfers and financial transactions. The application supports key banking operations including adding money, cashouts, bonus rewards, and comprehensive transaction history tracking.
 
 ## Features 
 - **Simple Login Interface** - Secure authentication with username and password
@@ -16,11 +20,14 @@ PAYOO is a smart Mobile Financial Services (MFS) interface that provides a seaml
 - **PIN Security System** - Every transaction requires PIN authentication for enhanced security
 - **User-Friendly Interface** - Responsive design built with DaisyUI for optimal experience across devices
 
-## UI 
+## UI
+
+<!-- <img src="./assets/Logo-full.png" width="200"  style="background:white;padding:10px;"/> -->
+
 <table>
     <tr>
         <td>
-        <img src="./ui/Login page.png" >
+        <img src="./UI/Login page.png" >
         </td>
         <td >
         <img src="./assets/Logo-full.png" width="100%" style="background:white;padding:10px;">
@@ -28,42 +35,36 @@ PAYOO is a smart Mobile Financial Services (MFS) interface that provides a seaml
     </tr>
     <tr>
         <td>
-        <img src="./ui/Cashout.png" >
+        <img src="./UI/Cashout.png" >
         </td>
         <td >
-        <img src="./ui/Add Money.png" >
+        <img src="./UI/Add Money.png" >
         </td>
     </tr>
     <tr>
         <td>
-        <img src="./ui/Transactions.png" >
+        <img src="./UI/Transactions.png" >
         </td>
         <td >
-        <img src="./ui/Pay Bill.png" >
+        <img src="./UI/Pay Bill.png" >
         </td>
     </tr>
     <tr>
         <td>
-        <img src="./ui/send money.png" >
+        <img src="./UI/send money.png" >
         </td>
         <td >
-        <img src="./ui/Home Page.png">
+        <img src="./UI/Home Page.png">
         </td>
     </tr>
     
 </table>
 
-## How to use
 
-### 1. Clone the Repository
 
-```bash
-git clone https://github.com/ProgrammingHero1/payoo-resources.git
-```
+> ### **Install Dependencies**
 
-### 2. Install Dependencies
-
-Copy the project assets and set up required CDNs:
+> **Copy the project assets and set up required CDNs:**
 
 - **Tailwind CSS** - Add to `<head>`:
 
@@ -73,6 +74,16 @@ Copy the project assets and set up required CDNs:
 
 - **Font Awesome** - Add Font Awesome icons:
 
+<br>
+---
 
-### 3. Start Building the Application
+
+> ## **👨‍💻 Developed By**
+
+**Bayjid Alom**
+
+🔗 GitHub: https://github.com/bayjid-alom
+
+
+
 
