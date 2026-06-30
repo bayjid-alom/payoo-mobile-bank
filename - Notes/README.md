@@ -145,7 +145,11 @@ header {
 
 
 
-  ## ✔️ --- Page
+  ## ✔️ ```Machine``` **Common Function** 
+    - To avoid code repeat. ✔️
+  ``` machine.js```
+  - connect with **home.html** 
+
 
 
 
