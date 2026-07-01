@@ -3,7 +3,7 @@
 document.getElementById("cashout-btn").addEventListener("click", function () {
     // 01. get the agent number and validate
     const cashoutNumber = getValueFromInput("cashout-number");
-    if(cashoutNumber.length != 11){
+    if (cashoutNumber.length != 11) {
         alert("Invalid Number");
         return;
     }
@@ -30,13 +30,15 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
         alert("Cashout Successfully");
         balanceElement.innerText = newBalance;
     }
-    else{
+    else {
         alert("Invalid Pin");
         return;
     }
-
-
 })
+
+
+
+
 
 
 

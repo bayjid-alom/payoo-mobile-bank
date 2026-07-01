@@ -150,6 +150,17 @@ header {
   ``` machine.js```
   - connect with **home.html** 
 
+  ```
+  (id) - লিখতে হবে ।
+  
+  function getValueFromTheInput(id) {
+    const input = document.getElementById(id);
+    const value = input.value;
+    return value;
+}
+```
+
+
 
 
 
