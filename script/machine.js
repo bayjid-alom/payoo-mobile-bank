@@ -4,7 +4,27 @@ console.log("Machine Connected.")
 function getValueFromInput(id) {
     const input = document.getElementById(id);
     const value = input.value;
-    console.log(id, value)
+    // console.log(id, value)
     // value return করতে হবে ।
     return value;
+}
+
+
+
+// Machine -> balance
+function getBalance(id) {
+    const balanceElement = document.getElementById("balance");
+    const balance = balanceElement.innerText;
+    // নাম্বারে কনভার্ট করে রিটার্ন করতে হবে ।
+    console.log("Current balance ", Number(balance))
+    return Number(balance);
+}
+
+
+
+// Machine value --> set Balance (To avoid repeated code for set Balance)
+// এখানে একটা ভেল্যু পাঠানো হবে তাই। (Nothing return it.)
+function setBalance(value){
+    const balanceElement = document.getElementById("balance");
+    balanceElement.innerText = value;
 }

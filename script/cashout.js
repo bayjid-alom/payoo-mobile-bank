@@ -12,13 +12,17 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
     const cashoutAmount = getValueFromInput("cashout-amount");
 
     // 03. get current balance, validate, convert to number (innerText)
-    const balanceElement = document.getElementById("balance");
-    const balance = balanceElement.innerText;
-    console.log("New balance - ", balance)
+    const currentBalance = getBalance("balance");
+
+    // Normally - 01
+    // const balanceElement = document.getElementById("balance");
+    // const balance = balanceElement.innerText;
+    // console.log("New balance - ", balance)
+
 
     // 04. Calculate new balance
-    const newBalance = Number(balance) - Number(cashoutAmount);
-    console.log(newBalance)
+    const newBalance = currentBalance - Number(cashoutAmount);
+    console.log("Remaining Balance :", newBalance)
     if (newBalance < 0) {
         alert("Invalid Amount!");
         return;
@@ -28,13 +32,39 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
     const pin = getValueFromInput("cashout-pin");
     if (pin === "1234") {
         alert("Cashout Successfully");
-        balanceElement.innerText = newBalance;
+        // balanceElement.innerText = newBalance;
+        // document.getElementById("balance").innerText = currentBalance;
+        // ফাংশন কল - নতুন যে ব্যালেন্স সেটা প্যারামিটার বা ভেল্যু হিসেবে পাঠাতে হবে।
+        setBalance(newBalance)
     }
     else {
         alert("Invalid Pin");
         return;
     }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
