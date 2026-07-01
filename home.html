@@ -103,7 +103,51 @@
     </section>
 
 
+    <section id="add-money" class="mx-auto  w-11/12 mt-5">
+        <h2 class="text-xl font-bold mb-5">Add Money</h2>
 
+        <div class="card bg-base-100 w-full mx-auto rounded-3xl">
+            <div class="card-body">
+                <label class="label text-neutral font-bold">Select A Bank</label>
+                <select id="add-money-bank"
+                    class="select w-full rounded-full bg-base-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200">
+                    <option disabled selected>Select bank</option>
+                    <option value="DBBL">DBBL</option>
+                    <option value="IBBL">IBBL</option>
+                    <option value="City Bank">City Bank</option>
+                </select>
+                <br>
+
+                <fieldset class="fieldset">
+
+                    <label class="label text-neutral font-bold">Bank Account Number</label>
+                    <input id="add-money-number" maxlength="11" type="text"
+                        class="input rounded-full w-full bg-base-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                        placeholder="Enter 11 digit account number" />
+                    <!--  এখানে ভেল্যু ফিক্সড করে দেওয়া যাবে না । (value="01648771835")-->
+
+                    <br>
+
+                    <label class="label text-neutral font-bold">Amount to Add</label>
+                    <input id="add-money-amount" type="number"
+                        class="input rounded-full w-full bg-base-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                        placeholder="Add Amount to withdraw" />
+                    <br>
+
+                    <label class="label text-neutral font-bold">Pin Number</label>
+                    <input id="add-money-pin" maxlength="4" type="password" class="input rounded-full w-full bg-base-200
+                    focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                        placeholder="Enter 4 digit pin number" />
+                    <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
+                    <button id="add-money-btn" class="btn btn-primary mt-4 rounded-full w-full">Add Money</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+
+
+<!-- কাজের সুবিধার্থে hidden করে রাখা হয়েছে । -->
     <section id="cashout" class="mx-auto  w-11/12 mt-5">
         <h2 class="text-xl font-bold mb-5">Cashout</h2>
         <!-- form -->

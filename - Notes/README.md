@@ -163,7 +163,11 @@ header {
 
  ## ✔️ ```Machine``` **getBalance()** - Another function
  - যেহেতু এমাউন্ট উঠানামা করবে সবসময়।
- 
+
+
+ > ## ✔️ **Home Page > Add Money Section**
+- select এ option এর value লিখতে হবে ।
+ - <option value="DBBL">DBBL</option>
 
 
 
@@ -198,7 +202,8 @@ header {
 
 
 
- <br><br>
+
+ <br><br><br><br>
 ---
 
 > # **Note:** ```DaisyUI```
