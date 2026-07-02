@@ -168,6 +168,33 @@ header {
  > ## ✔️ **Home Page > Add Money Section**
 - select এ option এর value লিখতে হবে ।
  - <option value="DBBL">DBBL</option>
+ - ```add-money.js```
+ 
+ ```
+ Maintain Serial is must!!
+
+<script src="script/machine.js"></script>
+<script src="script/addMoney.js"></script>
+<script src="script/cashout.js"></script>
+```
+
+-Bank account "Select A Bank" হলে alert! দেখাতে হবে ।
+```
+<option disabled selected>Select bank</option>
+```
+
+
+```
+Make it Dynamic : 🔥
+
+if (pin === "1234") {
+    alert(`
+    Money Added Successfully! from ${bankAcount}
+    at ${new Date()}
+    `);
+    setBalance(newBalance)
+};
+```
 
 
 

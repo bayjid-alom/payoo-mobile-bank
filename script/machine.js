@@ -1,4 +1,4 @@
-console.log("Machine Connected.")
+// console.log("Machine Connected.")
 
 // Machine id --> input value (ইনপুট ফিল্ডের জন্য)
 function getValueFromInput(id) {
@@ -11,7 +11,7 @@ function getValueFromInput(id) {
 
 
 
-// Machine -> balance
+// Machine -> balance (শুরুতে যা থাকবে)
 function getBalance(id) {
     const balanceElement = document.getElementById("balance");
     const balance = balanceElement.innerText;
