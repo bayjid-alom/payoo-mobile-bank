@@ -15,7 +15,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
         // 03-01. true::::>> alert> homepage
         alert("Login successful");
         // window.location.replace("/home.html")
-        window.location.assign("/home.html")
+        window.location.assign("home.html")
     }
 
     else {
