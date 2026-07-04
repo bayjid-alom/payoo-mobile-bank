@@ -117,3 +117,26 @@ document.getElementById("login-btn").addEventListener("click", function () {
 ```
 
 
+## Transactions
+
+```
+// Transaction History - 4 Simple Steps
+
+// Step 1: Select the transaction history container
+const history = document.getElementById("history-container");
+
+// Step 2: Create a new history item
+const newHistory = document.createElement("div");
+
+// Step 3: Add the transaction details
+newHistory.innerHTML = `
+    <div class="transaction-card rounded-md border border-primary/30 p-5 bg-base-100">
+        Money Added Successfully from ${bankAcount}, Acc No: ${accNo} at ${new Date()}
+    </div>
+`;
+
+// Step 4: Append the new history item to the container
+history.appendChild(newHistory);
+```
+
+

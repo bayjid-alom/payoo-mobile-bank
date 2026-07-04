@@ -1,5 +1,3 @@
-// console.log("Machine Connected.")
-
 // Machine id --> input value (ইনপুট ফিল্ডের জন্য)
 function getValueFromInput(id) {
     const input = document.getElementById(id);
@@ -31,34 +29,22 @@ function setBalance(value) {
 
 
 
-
+// Toggle
 //  id >> hide all >> show an id
-// function showOnly(id) {
-//     const addmoney = document.getElementById("add-money");
-//     const cashout = document.getElementById("cashout");
-
-//     // console.log(`add Money - ${addmoney} , Cashout - ${cashout}`)
-
-//     // 1. hide all
-//     addmoney.classList.add("hidden");
-//     cashout.classList.add("hidden")
-
-//     // 2. id wala element ta ke show koro
-//     const selected = document.getElementById(id);
-//     selected.classList.remove("hidden")
-// }
-
-
-
-function showOnly(id){
-    const cashout = document.getElementById("cashout");
+function showOnly(id) {
     const addmoney = document.getElementById("add-money");
+    const cashout = document.getElementById("cashout");
+    const history = document.getElementById("history")
+
+    // console.log(`add Money - ${addmoney} , Cashout - ${cashout}`)
 
     // 1. hide all
-    cashout.classList.add("hidden");
     addmoney.classList.add("hidden");
+    cashout.classList.add("hidden")
+    history.classList.add("hidden")
 
-    // 2. show that which is clicked
-    const selected = document.getElementById(id)
+    // 2. show only clicked one
+    const selected = document.getElementById(id);
     selected.classList.remove("hidden")
 }
+

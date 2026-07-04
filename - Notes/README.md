@@ -204,6 +204,7 @@ if (pin === "1234") {
 * Select all sections.
 * Hide all sections using `classList.add("hidden")`.
 * Show the target section using `classList.remove("hidden")`.
+* (Also hidden by class in html file)
 
 ### Toggle করার ২টি উপায়
 
@@ -248,24 +249,41 @@ document
 ```
 
 
+## ✔️ Transaction History (Bottom of `home.html`)
+
+* Make a `history-container`.
+* Keep it empty at first.
+* After a successful transaction (Add Money / Cash Out), add a new history card.
+* Call the history code after `setBalance()`.
+* Find the `history-container`.
+* Create a new `div`.
+* Write the history text using `innerHTML`.
+* Add the new `div` to the container using `appendChild()`.
+* Every successful transaction will add a new history card.
 
 
 
 
+###  Transaction History - 4 Simple Steps
 
+```
+// Step 1: Select the transaction history container
+const history = document.getElementById("history-container");
 
+// Step 2: Create a new history item
+const newHistory = document.createElement("div");
 
+// Step 3: Add the transaction details
+newHistory.innerHTML = `
+    <div class="transaction-card rounded-md border border-primary/30 p-5 bg-base-100">
+        Money Added Successfully from ${bankAcount}, Acc No: ${accNo} at ${new Date()}
+    </div>
+`;
 
+// Step 4: Append the new history item to the container
+history.appendChild(newHistory);
 
-
-
-
-
-
-
-
-
-
+```
 
 
 

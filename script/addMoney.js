@@ -29,18 +29,36 @@ document.getElementById("add-money-btn").addEventListener("click", function () {
     if (pin === "1234") {
         // alert("Add Money Success");
         alert(`
-            Money Added Successfully! from ${bankAcount}
-            at ${new Date()}
-
+        Money Added Success from ${bankAcount} , acc-no ${accNo} at ${new Date()}
             `);
 
         // setBalance(যা পূর্বে ছিল + এডেড এমাউন্ট)
         setBalance(newBalance)
+
+
+
+        // =========History=========================
+        // 01. history-container ke niye aste hobe
+        const history = document.getElementById("history-container");
+
+        // 02. new div create
+        const newHistory = document.createElement("div")
+
+        // 03. new div innerHTML likhbo
+        newHistory.innerHTML = `
+        <div class="transaction-card rounded-md border border-primary/30 p-5 bg-base-100">
+              Money Added Success from ${bankAcount} , acc-no ${accNo} at ${new Date()}
+        </div>
+        `;
+
+        // 04. append child in container
+        history.appendChild(newHistory)
+
     }
+
     else {
         alert("Invalid Pin");
         return;
     }
-
 
 })

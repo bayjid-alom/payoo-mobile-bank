@@ -31,11 +31,31 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
     // 05. get the pin an verify
     const pin = getValueFromInput("cashout-pin");
     if (pin === "1234") {
-        alert("Cashout Successfully");
+        // alert("Cashout Successfully");
+
+        alert(`Cash Out Successful! Amount: $${cashoutAmount} at ${new Date}`);
         // balanceElement.innerText = newBalance;
         // document.getElementById("balance").innerText = currentBalance;
         // ফাংশন কল - নতুন যে ব্যালেন্স সেটা প্যারামিটার বা ভেল্যু হিসেবে পাঠাতে হবে।
         setBalance(newBalance)
+
+
+        // =========History=========================
+        // 01. history-container ke niye aste hobe
+        const history = document.getElementById("history-container");
+
+        // 02. new div create
+        const newHistory = document.createElement("div")
+
+        // 03. new div innerHTML likhbo
+        newHistory.innerHTML = `
+        <div class="transaction-card rounded-md border border-primary/30 p-5 bg-base-100">
+              Cash Out Successful! Amount: $${cashoutAmount} at ${new Date}
+        </div>
+        `;
+
+        // 04. append child in container
+        history.appendChild(newHistory)
     }
     else {
         alert("Invalid Pin");
