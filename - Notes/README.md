@@ -197,6 +197,57 @@ if (pin === "1234") {
 ```
 
 
+## ✔️ Toggle Sections **Thinking Process**
+
+
+* Function call → Target section **ID** pass.
+* Select all sections.
+* Hide all sections using `classList.add("hidden")`.
+* Show the target section using `classList.remove("hidden")`.
+
+### Toggle করার ২টি উপায়
+
+* **`onclick`** → HTML থেকে function call।
+* **`addEventListener()`** → JavaScript থেকে click event handle করে function call।
+
+
+```
+<button onclick="showOnly('add-money')">Add Money</button>
+<button onclick="showOnly('cashout')">Cashout</button>
+
+function showOnly(id) {
+    const cashout = document.getElementById("cashout");
+    const addmoney = document.getElementById("add-money");
+
+    // Step 1: Hide all available sections
+    cashout.classList.add("hidden");
+    addmoney.classList.add("hidden");
+
+    // Step 2: Display only the requested section
+    const selected = document.getElementById(id);
+    selected.classList.remove("hidden");
+}
+```
+<br>
+
+## Another way : by Using **addEventListener()**
+
+```
+
+document
+    .getElementById("add-money-btn")
+    .addEventListener("click", function () {
+        showOnly("add-money");
+    });
+
+document
+    .getElementById("cashout-btn")
+    .addEventListener("click", function () {
+        showOnly("cashout");
+    });
+```
+
+
 
 
 

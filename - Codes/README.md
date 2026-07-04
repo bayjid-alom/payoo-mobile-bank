@@ -97,3 +97,23 @@ document.getElementById("login-btn").addEventListener("click", function () {
 ```
 
 
+
+
+ > ## ✔️ Toggle - **(machine.js)**
+
+ ```
+ function showOnly(id) {
+    const cashout = document.getElementById("cashout");
+    const addmoney = document.getElementById("add-money");
+
+    // Step 1: Hide all available sections
+    cashout.classList.add("hidden");
+    addmoney.classList.add("hidden");
+
+    // Step 2: Display only the requested section
+    const selected = document.getElementById(id);
+    selected.classList.remove("hidden");
+}
+```
+
+

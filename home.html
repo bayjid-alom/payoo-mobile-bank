@@ -68,42 +68,50 @@
 
         <div class="buttons grid grid-cols-3 gap-3 ">
             <!-- বাটনে কিছু লিখলে সেটা সাধারণত ডিসপ্লে ফ্লেক্স করে দেয় । fix: flex-col  এবং daisyUI থেকে আসলে বাটনের একটা ফিক্সড height দেওয়া থাকে fix: h-full -->
-            <button class="btn flex-col h-full py-4 btn-soft">
+            <button onclick="showOnly('add-money')"
+                class="btn flex-col h-full py-5 btn-soft text-primary hover:border-primary transition-all duration-300 ease-in-out hover:scale-105 hover:bg-primary hover:text-white">
                 <img src="./assets/opt-1.png" alt="">
-                <p class="text-primary">Add Money</p>
+                <p>Add Money</p>
             </button>
 
-            <button class="btn flex-col h-full py-4 btn-soft cashout-button">
+            <button onclick="showOnly('cashout')"
+                class="btn flex-col h-full py-5 btn-soft text-primary hover:border-primary transition-all duration-300 ease-in-out hover:scale-105 hover:bg-primary hover:text-white">
                 <img src="./assets/opt-2.png" alt="">
-                <p class="text-primary">Cashout</p>
-            </button>
-
-            <button class="btn flex-col h-full py-4 btn-soft">
-                <img src="./assets/opt-3.png" alt="">
-                <p class="text-primary whitespace-nowrap">Transfer Money</p>
-            </button>
-
-            <button class="btn flex-col h-full py-4 btn-soft">
-                <img src="./assets/opt-4.png" alt="">
-                <p class="text-primary">Get Bonus</p>
-            </button>
-
-            <button class="btn flex-col h-full py-4 btn-soft">
-                <img src="./assets/opt-5.png" alt="">
-                <p class="text-primary">Pay Bill</p>
+                <p>Cashout</p>
             </button>
 
             <button
-                class="btn flex-col h-full py-5 btn-soft hover:border-primary transition-all duration-300 ease-in-out hover:scale-105">
+                class="btn flex-col h-full py-5 btn-soft text-primary hover:border-primary transition-all duration-300 ease-in-out hover:scale-105 hover:bg-primary hover:text-white">
+                <img src="./assets/opt-3.png" alt="">
+                <p class="whitespace-nowrap">Transfer Money</p>
+            </button>
+
+            <button
+                class="btn flex-col h-full py-5 btn-soft text-primary hover:border-primary transition-all duration-300 ease-in-out hover:scale-105 hover:bg-primary hover:text-white">
+                <img src="./assets/opt-4.png" alt="">
+                <p>Get Bonus</p>
+            </button>
+
+            <button
+                class="btn flex-col h-full py-5 btn-soft text-primary hover:border-primary transition-all duration-300 ease-in-out hover:scale-105 hover:bg-primary hover:text-white">
+                <img src="./assets/opt-5.png" alt="">
+                <p>Pay Bill</p>
+            </button>
+
+            <button
+                class="btn flex-col h-full py-5 btn-soft text-primary hover:border-primary transition-all duration-300 ease-in-out hover:scale-105 hover:bg-primary hover:text-white">
                 <img src="./assets/opt-1.png" alt="">
-                <p class="text-primary">Transactions</p>
+                <p>Transactions</p>
             </button>
 
         </div>
     </section>
 
 
-    <section id="add-money" class="mx-auto  w-11/12 mt-5">
+
+
+
+    <section id="add-money" class="mx-auto  w-11/12 mt-10 hidden">
         <h2 class="text-xl font-bold mb-5">Add Money</h2>
 
         <div class="card bg-base-100 w-full mx-auto rounded-3xl">
@@ -148,7 +156,7 @@
 
 
     <!-- কাজের সুবিধার্থে hidden করে রাখা হয়েছে । -->
-    <section id="cashout" class="mx-auto  w-11/12 mt-5 hidden">
+    <section id="cashout" class="mx-auto  w-11/12 mt-10 hidden">
         <h2 class="text-xl font-bold mb-5">Cashout</h2>
         <!-- form -->
         <div class="card bg-base-100 w-full  mx-auto rounded-3xl">
