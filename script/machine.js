@@ -35,13 +35,15 @@ function showOnly(id) {
     const addmoney = document.getElementById("add-money");
     const cashout = document.getElementById("cashout");
     const history = document.getElementById("history")
+    const defaultSection = document.getElementById("default-section")
 
-    // console.log(`add Money - ${addmoney} , Cashout - ${cashout}`)
+    
 
     // 1. hide all
     addmoney.classList.add("hidden");
     cashout.classList.add("hidden")
     history.classList.add("hidden")
+    defaultSection.classList.add("hidden")
 
     // 2. show only clicked one
     const selected = document.getElementById(id);
