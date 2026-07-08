@@ -49,10 +49,44 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
 
         // 03. new div innerHTML likhbo
         newHistory.innerHTML = `
-        <div class="transaction-card rounded-md border border-primary/30 p-5 bg-base-100">
-              Cash Out Successful! Amount: $${cashoutAmount} at ${new Date}
+<div class="relative overflow-hidden rounded-2xl border border-red-400/20 bg-gradient-to-br from-base-100 via-red-50/30 to-rose-100/20 p-5 shadow-lg transition-all duration-300 hover:border-red-400/40 hover:shadow-[0_10px_35px_rgba(239,68,68,0.18)]">
+
+    <!-- Left Accent -->
+    <div class="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-red-400 via-rose-500 to-red-600"></div>
+
+    <div class="flex items-center gap-4">
+
+        <!-- Cash Out Icon -->
+        <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-error text-error-content shadow-md">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2.2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 19V5m0 0l-5 5m5-5l5 5" />
+            </svg>
         </div>
-        `;
+
+        <!-- Transaction Message -->
+        <div class="flex-1">
+            
+
+            <p class="mt-1 text-sm text-base-content/80">
+                <span class="font-medium text-red-500">
+                    Cash Out Successful!
+                </span>
+                Amount:
+                <span class="font-semibold">$${cashoutAmount}</span>
+                at
+                <span class="text-base-content/60">${new Date().toLocaleString()}</span>
+            </p>
+        </div>
+
+    </div>
+</div>
+`;
 
         // 04. append child in container
         history.appendChild(newHistory)
