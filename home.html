@@ -80,7 +80,7 @@
                 <p>Cashout</p>
             </button>
 
-            <button
+            <button onclick="showOnly('transfer')"
                 class="btn flex-col h-full py-5 btn-soft text-primary hover:border-primary transition-all duration-300 ease-in-out hover:scale-105 hover:bg-primary hover:text-white">
                 <img src="./assets/opt-3.png" alt="">
                 <p class="whitespace-nowrap">Transfer Money</p>
@@ -111,6 +111,41 @@
 
 
 
+    <!-- Transfer Money-->
+    <section id="transfer" class="mx-auto  w-11/12 mt-10 hidden">
+        <h2 class="text-xl font-bold mb-5">Transfer Money</h2>
+        <!-- form -->
+        <div class="card bg-base-100 w-full  mx-auto rounded-3xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+
+                    <label class="label text-neutral font-bold">User Account Number</label>
+                    <input id="transfer-number" maxlength="11" type="text"
+                        class="input rounded-full w-full bg-base-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                        placeholder="Enter 11 digit number" value="01740309855"/>
+
+                    <br>
+
+                    <label class="label text-neutral font-bold">Amout</label>
+                    <input id="transfer-amount" type="number"
+                        class="input rounded-full w-full bg-base-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                        placeholder="Enter amount to transfer" />
+                    <br>
+
+                    <label class="label text-neutral font-bold">Pin Number</label>
+                    <input id="transfer-pin" maxlength="4" type="password" class="input rounded-full w-full bg-base-200
+                    focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                        placeholder="Enter 4 digit pin number" />
+                    <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
+                    <button id="transfer-btn" class="btn btn-primary mt-4 rounded-full w-full"> Send Now</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Add money section -->
     <section id="add-money" class="mx-auto  w-11/12 mt-10 hidden">
         <h2 class="text-xl font-bold mb-5">Add Money</h2>
 
@@ -337,9 +372,16 @@
 
 
 
+
+
+
+
+
+
     <script src="script/machine.js"></script>
     <script src="script/addMoney.js"></script>
     <script src="script/cashout.js"></script>
+    <script src="script/transfer.js"></script>
 </body>
 
 </html>
