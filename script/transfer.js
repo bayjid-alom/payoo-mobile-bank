@@ -9,6 +9,11 @@ document.getElementById("transfer-btn").addEventListener("click", function () {
     const balance = getBalance("balance");
     const amount = getValueFromInput("transfer-amount");
 
+    if (amount == "") {
+        alert("Please enter an amount!");
+        return;
+    }
+
 
     const newBalance = balance - Number(amount);
     if (newBalance < 0) {
@@ -35,7 +40,7 @@ document.getElementById("transfer-btn").addEventListener("click", function () {
 
         history.appendChild(newHistory)
     }
-    
+
     else {
         alert("Invalid Pin");
         return;
