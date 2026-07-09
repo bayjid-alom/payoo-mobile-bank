@@ -112,6 +112,36 @@
 
 
     <!-- Transfer Money-->
+    <section id="get-bonus" class="mx-auto  w-11/12 mt-10 ">
+        <h2 class="text-xl font-bold mb-5">Get Bonus</h2>
+        <!-- form -->
+        <div class="card bg-base-100 w-full  mx-auto rounded-3xl">
+            <div class="card-body">
+                <fieldset class="fieldset">
+
+                    <label class="label text-neutral font-bold">Enter your coupon</label>
+                    <input id="coupon-input" type="text"
+                        class="input rounded-full w-full bg-base-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                        placeholder="Enter your coupon" />
+
+
+
+                    <h3 class="mt-2 ml-2 text-sm text-neutral-500">
+                        Use this coupon <span class="font-semibold text-primary">BA1835</span> to get a
+                        <span class="font-semibold text-success">$1250 bonus</span>.
+                    </h3>
+
+                    <br>
+
+                    <button id="get-bonus-btn" class="btn btn-primary mt-4 rounded-full w-full"> Get Bonus</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Transfer Money-->
     <section id="transfer" class="mx-auto  w-11/12 mt-10 hidden">
         <h2 class="text-xl font-bold mb-5">Transfer Money</h2>
         <!-- form -->
@@ -122,7 +152,7 @@
                     <label class="label text-neutral font-bold">User Account Number</label>
                     <input id="transfer-number" maxlength="11" type="text"
                         class="input rounded-full w-full bg-base-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
-                        placeholder="Enter 11 digit number" value="01740309855"/>
+                        placeholder="Enter 11 digit number" value="01740309855" />
 
                     <br>
 
@@ -382,6 +412,7 @@
     <script src="script/addMoney.js"></script>
     <script src="script/cashout.js"></script>
     <script src="script/transfer.js"></script>
+    <script src="script/getBonus.js"></script>
 </body>
 
 </html>
