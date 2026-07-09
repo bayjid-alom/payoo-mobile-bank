@@ -38,19 +38,21 @@ function showOnly(id) {
     const defaultSection = document.getElementById("default-section");
     const transfer = document.getElementById("transfer");
     const bonus = document.getElementById("get-bonus");
+    const payBill = document.getElementById("pay-bill");
 
     
 
     // 1. hide all
     addmoney.classList.add("hidden");
-    cashout.classList.add("hidden")
-    history.classList.add("hidden")
-    defaultSection.classList.add("hidden")
-    transfer.classList.add("hidden")
-    bonus.classList.add("hidden")
+    cashout.classList.add("hidden");
+    history.classList.add("hidden");
+    defaultSection.classList.add("hidden");
+    transfer.classList.add("hidden");
+    bonus.classList.add("hidden");
+    payBill.classList.add("hidden");
 
     // 2. show only clicked one
     const selected = document.getElementById(id);
-    selected.classList.remove("hidden")
+    selected.classList.remove("hidden");
 }
 
