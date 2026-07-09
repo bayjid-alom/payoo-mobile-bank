@@ -37,6 +37,7 @@ function showOnly(id) {
     const history = document.getElementById("history")
     const defaultSection = document.getElementById("default-section");
     const transfer = document.getElementById("transfer");
+    const bonus = document.getElementById("get-bonus");
 
     
 
@@ -46,6 +47,7 @@ function showOnly(id) {
     history.classList.add("hidden")
     defaultSection.classList.add("hidden")
     transfer.classList.add("hidden")
+    bonus.classList.add("hidden")
 
     // 2. show only clicked one
     const selected = document.getElementById(id);

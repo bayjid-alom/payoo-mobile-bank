@@ -86,7 +86,7 @@
                 <p class="whitespace-nowrap">Transfer Money</p>
             </button>
 
-            <button
+            <button onclick="showOnly('get-bonus')"
                 class="btn flex-col h-full py-5 btn-soft text-primary hover:border-primary transition-all duration-300 ease-in-out hover:scale-105 hover:bg-primary hover:text-white">
                 <img src="./assets/opt-4.png" alt="">
                 <p>Get Bonus</p>
@@ -111,8 +111,68 @@
 
 
 
-    <!-- Transfer Money-->
-    <section id="get-bonus" class="mx-auto  w-11/12 mt-10 ">
+
+    <section id="pay-bill" class="mx-auto  w-11/12 mt-10 ">
+        <h2 class="text-xl font-bold mb-5">Pay Bill</h2>
+
+        <div class="card bg-base-100 w-full mx-auto rounded-3xl">
+            <div class="card-body">
+
+                <label class="label text-neutral font-bold">Select To Pay</label>
+                <select id="select-service"
+                    class="select w-full rounded-full bg-base-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200">
+                    <option disabled selected>Select one</option>
+                    <option value="Electricity Bill">Electricity Bill</option>
+                    <option value="Mobile Recharge">Mobile Recharge</option>
+                    <option value="Bank Deposit">Bank Deposit</option>
+                    <option value="Gas Bill">Gas Bill</option>
+
+                    <option value="Water Bill">Water Bill</option>
+                    <option value="Internet Bill">Internet Bill</option>
+                    <option value="Mobile Bill">Mobile Bill</option>
+                    <option value="Cable TV Bill">Cable TV Bill</option>
+                    <option value="Landline Bill">Landline Bill</option>
+                    <option value="Credit Card Bill">Credit Card Bill</option>
+                    <option value="Insurance Premium">Insurance Premium</option>
+                    <option value="Education Fee">Education Fee</option>
+                    <option value="Property Tax">Property Tax</option>
+                    <option value="Service Charge">Service Charge</option>
+                </select>
+                <br>
+
+                <fieldset class="fieldset">
+
+                    <label class="label text-neutral font-bold">Biller Account Number</label>
+                    <input id="pay-bill-number" maxlength="11" type="text"
+                        class="input rounded-full w-full bg-base-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                        placeholder="Enter account number" value="01950826431" />
+
+
+                    <br>
+
+                    <label class="label text-neutral font-bold">Amount to Pay</label>
+                    <input id="pay-bill-amount" type="number"
+                        class="input rounded-full w-full bg-base-200 focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                        placeholder="Add Amount to pay" />
+                    <br>
+
+                    <label class="label text-neutral font-bold">Pin Number</label>
+                    <input id="add-money-pin" maxlength="4" type="password" class="input rounded-full w-full bg-base-200
+                    focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-200"
+                        placeholder="Enter 4 digit pin number" />
+                    <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
+                    <button id="pay-bill-btn" class="btn btn-primary mt-4 rounded-full w-full">Pay Now</button>
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Get Bonus-->
+    <section id="get-bonus" class="mx-auto  w-11/12 mt-10 hidden">
         <h2 class="text-xl font-bold mb-5">Get Bonus</h2>
         <!-- form -->
         <div class="card bg-base-100 w-full  mx-auto rounded-3xl">
@@ -391,9 +451,12 @@
 
         <div id="history-container" class="space-y-5">
             <!-- <div class="transaction-card rounded-md border border-primary/30 p-5 bg-base-100">
-               
             </div> -->
+
+
+            <!-- Pay bill card here - dymically -->
         </div>
+
     </section>
 
 
@@ -413,6 +476,7 @@
     <script src="script/cashout.js"></script>
     <script src="script/transfer.js"></script>
     <script src="script/getBonus.js"></script>
+    <script src="script/payBill.js"></script>
 </body>
 
 </html>

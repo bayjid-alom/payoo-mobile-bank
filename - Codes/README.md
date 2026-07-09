@@ -140,3 +140,53 @@ history.appendChild(newHistory);
 ```
 
 
+
+
+##  Paybill history
+
+
+```
+            <div
+                class="relative mx-auto flex items-center justify-between overflow-hidden rounded-2xl border border-gray-200 bg-white p-4 shadow-sm transition-all duration-300 hover:border-primary/30 hover:shadow-md">
+
+                <!-- Left Accent Border -->
+                <div
+                    class="absolute left-0 top-0 h-full w-1.5 rounded-l-2xl bg-gradient-to-b from-sky-400 via-blue-500 to-indigo-600">
+                </div>
+
+                <!-- Left Side -->
+                <div class="flex items-center gap-4 pl-2">
+
+                    <!-- Icon -->
+                    <div
+                        class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-base-300 bg-base-200">
+                        <img class="h-8 w-8 object-contain" src="./assets/opt-1.png" alt="Electricity Bill">
+                    </div>
+
+                    <!-- Content -->
+                    <div>
+                        <h3 class="font-semibold text-base text-neutral-800">
+                            Electricity Bill
+                        </h3>
+
+                        <p class="mt-1 flex items-center gap-2 text-xs text-neutral-500">
+                            <span>Today</span>
+                            <span class="h-1 w-1 rounded-full bg-neutral-400"></span>
+                            <span>09:45 AM</span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Right Side -->
+                <button
+                    class="flex h-10 w-10 items-center justify-center rounded-lg text-neutral-500 transition hover:bg-base-200 hover:text-primary">
+                    <i class="fa-solid fa-ellipsis-vertical text-lg"></i>
+                </button>
+
+            </div>
+
+            <!-- Paybill history card - end ✅ -->
+```
+
+
